@@ -1,0 +1,24 @@
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+All of the elements of the application are functioning.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+None
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+This was the first time I created my own server (outside of Apache or something similar). It was neat to see how that could be done with node.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+The prove assignment submission was a little confusing, but I think that feedback has been clearly made in Teams. ;)
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements -CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I don't think I went above and beyond (although I did try to add placeholder text to the input field. It didn't like it though.) All I added was a heading to the index page instructing the user to insert their name. This was just most html code though.

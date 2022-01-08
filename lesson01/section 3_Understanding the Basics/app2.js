@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');
         res.write('<head><title>Welcome User</title></head>');
-        res.write('<body><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Send</button></form></body>');
+        res.write('<body><h3>Please insert a user name</h3><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Send</button></form></body>');
         res.write('</html>');
         return res.end();
     }
