@@ -3,22 +3,49 @@
 
 <head>
   <% include ../includes/header.ejs %>
+  <link rel="stylesheet" href="/stylesheets/ta03.css">
 </head>
-
 <body>
   <% include ../includes/nav.ejs %>
     <div class="jumbotron text-center">
       <div class="container">
-        <h1>
-          <%= title %>
-        </h1>
-        <p>This is the placeholder for Team Activity 03</p>
+
+        <% if (data.length > 0) { %>
+          <div class="grid">
+            <% for (let card of data) { %>
+
+              <article class="card data-item">
+                <header class="card__header">
+                    <h1 class="data__name">
+                        <%= card.name %>
+                    </h1>
+                </header>
+                <div class="card__image">
+                    <img src="<%= card.imageUrl %>" alt="<%= card.name %>">
+                </div>
+                <div class="card__content">
+                    <h2 class="data__price">$
+                        <%= card.price %>
+                    </h2>
+                    <p class="card__description">
+                        <%= card.description %>
+                    </p>
+                    <div class="card__tags">
+                      <% for (let tag of card.tags) { %>
+                        <p><%= tag %></p>
+                      <% } %>
+                    </div>
+                </div>
+              </article>
+            <% } %>
+
+          </div>
+        <% } else { %>
+          <h1>No Products Found</h1>
+        <% } %>
       </div>
-    </div>
-    <div class="container">
 
     </div>
-
 
 </body>
 

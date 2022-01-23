@@ -4,10 +4,12 @@ const path = require('path');
 
 const app = express();
 
+const errorController = require('./controllers/404')
+
 app.set('view engine', 'ejs'); // For EJS
 app.set('views', 'views');
 
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
 app.use(bodyParser.urlencoded({
@@ -15,14 +17,9 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
-    res.status(404).render('404', {
-        pageTitle: '404',
-        path: ''
-    });
-});
+app.use(errorController.get404);
 
 app.listen(3001);
