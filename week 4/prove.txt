@@ -1,0 +1,34 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-cardon.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+Adding an item works.
+Item details works.
+Add to Cart works.
+Editing an item works.
+Deleting an item works.
+Deleting from cart works.
+Ordering works.
+Everything seems to be working.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+None
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+While setting it up was a bit frustrating, I'm excited to see how we are able to use Heroku and what it can do.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+The most challenging thing this week was getting the project up on Heroku. I was able to do most of it with the documentation on Heroku, but the nodemon error that Tanner mentioned in his walkthrough saved me a ton of time.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements - CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I've coded along with the videos, but there hasn't really been much to expand on yet.

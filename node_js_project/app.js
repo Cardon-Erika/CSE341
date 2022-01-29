@@ -1,4 +1,6 @@
 const path = require('path');
+const PORT = process.env.PORT || 5000;
+const cors = require('cors');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -32,7 +34,20 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-mongoose.connect('mongodb+srv://main:LvPHax56Xf0ZE4RS@cluster0.4u4dj.mongodb.net/shop?retryWrites=true&w=majority')
+const corsOptions = {
+  origin: "https://cse341-cardon.herokuapp.com/",
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
+
+const options = {
+  family: 4
+};
+
+const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://main:LvPHax56Xf0ZE4RS@cluster0.4u4dj.mongodb.net/shop?retryWrites=true&w=majority";
+
+mongoose
+.connect(MONGODB_URL)
   .then(result => {
     User.findOne().then(user => {
       if (!user) {
@@ -46,7 +61,7 @@ mongoose.connect('mongodb+srv://main:LvPHax56Xf0ZE4RS@cluster0.4u4dj.mongodb.net
         user.save();
       }
     });
-    app.listen(3000);
+    app.listen(PORT);
   }).catch(err => {
     console.log(err);
   });
