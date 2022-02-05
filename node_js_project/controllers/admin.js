@@ -1,4 +1,3 @@
-const product = require('../models/product');
 const Product = require('../models/product');
 
 exports.getAddProduct = (req, res, next) => {
@@ -24,6 +23,7 @@ exports.postAddProduct = (req, res, next) => {
   product
     .save()
     .then(result => {
+      // console.log(result);
       console.log('Created Product');
       res.redirect('/admin/products');
     })
@@ -39,7 +39,6 @@ exports.getEditProduct = (req, res, next) => {
   }
   const prodId = req.params.productId;
   Product.findById(prodId)
-    // Product.findById(prodId)
     .then(product => {
       if (!product) {
         return res.redirect('/');
@@ -60,14 +59,15 @@ exports.postEditProduct = (req, res, next) => {
   const updatedPrice = req.body.price;
   const updatedImageUrl = req.body.imageUrl;
   const updatedDesc = req.body.description;
-  
-  Product.findById(prodId).then(product => {
-    product.title = updatedTitle;
-    product.price = updatedPrice;
-    product.description = updatedDesc;
-    product.imageUrl = updatedImageUrl;
-    return product.save()
-  })
+
+  Product.findById(prodId)
+    .then(product => {
+      product.title = updatedTitle;
+      product.price = updatedPrice;
+      product.description = updatedDesc;
+      product.imageUrl = updatedImageUrl;
+      return product.save();
+    })
     .then(result => {
       console.log('UPDATED PRODUCT!');
       res.redirect('/admin/products');
@@ -77,8 +77,8 @@ exports.postEditProduct = (req, res, next) => {
 
 exports.getProducts = (req, res, next) => {
   Product.find()
-  // .select('title price -_id')
-  // .populate('userId', 'name')
+    // .select('title price -_id')
+    // .populate('userId', 'name')
     .then(products => {
       console.log(products);
       res.render('admin/products', {

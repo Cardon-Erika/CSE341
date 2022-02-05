@@ -1,0 +1,31 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-cardon.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+Creating a new user is working.
+Signing it with an existing user is working.
+The error for incorrect email or password is thrown.
+The error for an email already existing is thrown.
+Emails are sent upon signup. (I did comment out my api_key for SendMail based on other students saying that pushing to git with the in the code deactivated their account.)
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+None - I believe everything is working.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The flash messages was interesting to learn about. That makes it easy to show an error without having to hardcode it in and set it to hidden until needed.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+Update the instructions for SendMail. That took a bit of exploring to figure out the steps I hadn't done that SendMail needed that weren't in the video.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements - CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I've coded along with the videos, but there hasn't really been much to expand on yet.

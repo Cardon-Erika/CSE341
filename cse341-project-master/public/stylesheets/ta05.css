@@ -1,0 +1,63 @@
+.jumbotron {
+  background: #0065bd;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.jumbotron .btn-primary {
+  background: #845ac7;
+  border-color: #845ac7;
+}
+
+.jumbotron .btn-primary:hover {
+  background: #7646c1;
+}
+
+.jumbotron p {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em;
+}
+
+button,
+input,
+select,
+textarea {
+  color: black;
+}
+
+/* #783f04 */
+.chocolate {
+  color: #783f04;
+}
+
+.chocolate_bkgd {
+  background: #783f04;
+}
+
+/* #008080 */
+.teal {
+  color: #008080;
+}
+
+.teal_bkgd {
+  background: #008080;
+}
+
+/* #ffa500 */
+.orange {
+  color: #ffa500;
+}
+
+.orange_bkgd {
+  background: #ffa500;
+}
+
+/* #ff00ff */
+.magenta {
+  color: #ff00ff;
+}
+
+.magenta_bkgd {
+  background: #ff00ff;
+}

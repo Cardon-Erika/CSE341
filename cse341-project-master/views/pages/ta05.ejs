@@ -1,0 +1,73 @@
+<% include ../includes/header.ejs %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/ta05.css">
+<% switch(style) {
+  case '1': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme1.css" />
+  <% break;
+  case '2': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme2.css" />
+  <% break;
+  case '3': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme3.css" />
+  <% break;
+  case '4': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme4.css" />
+  <% break;
+  default: %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  <%
+} %>
+
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>
+        <%= title %>
+      </h1>
+      <div class="container">
+
+        <!-- Change style form -->
+        <div>
+          <form action="/ta05/changeStyle" method="POST">
+            <label for="changeStyle">Choose a theme color:</label>
+            <select id="changeStyle" name="changeStyle">
+              <option value="0">Default</option>
+              <option value="1">Orange</option> <!-- #ffa500 -->
+              <option value="2">Teal</option> <!-- #008080 -->
+              <option value="3">Chocolate</option> <!-- #783f04 -->
+              <option value="4">Magenta</option> <!-- #ff00ff -->
+            </select>
+            <button type="submit">Change Style</button>
+          </form>
+        </div>
+
+        <!-- Change counter form -->
+        <div>
+          <form action="/ta05/counter" method="POST">
+            <input type="hidden" value="1" name="numChange">
+            <button class="btn btn-default" type="submit">Add 1!</button>
+          </form>
+          <%= counter %>
+          <form action="/ta05/counter" method="POST">
+            <input type="hidden" value="-1" name="numChange">
+            <button class="btn btn-default" type="submit">Subtract 1!</button>
+          </form>
+        </div>
+
+        <!-- Reset Session -->
+        <div>
+          <form action="/ta05/reset" method="POST">
+            <input type="hidden" value="reset" name="reset">
+            <button class="btn btn-default" type="submit">Reset Session</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+</body>
+
+</html>
