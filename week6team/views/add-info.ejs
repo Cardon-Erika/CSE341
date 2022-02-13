@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Team Activity</title>
+</head>
+
+<body>
+
+    <h1>Team Activity Week 6</h1>
+
+    <% if (errorMessage) { %>
+    <div class="error"><%= errorMessage %></div>
+    <% } %>
+
+    <form action="/add-info" method="POST">
+
+        <label for="name">Enter Name</label>
+        <input 
+            class="<%= validationErrors.find(e => e.param === 'name') ? 'invalid' : '' %>" 
+            type="text"
+            name="name"
+            id="name"
+            value="<% if (hasError) { %><%= info.name %><% } %>">
+
+        <label for="email">Enter Email</label>
+        <input 
+            class="<%= validationErrors.find(e => e.param === 'email') ? 'invalid' : '' %>" 
+            type="email" 
+            name="email" 
+            id="email"
+            value="<% if (hasError) { %><%= info.email %><% } %>">
+
+        <label for="zip">Enter Zip</label>
+        <input 
+            class="<%= validationErrors.find(e => e.param === 'zip') ? 'invalid' : '' %>" 
+            type="string" 
+            name="zip" 
+            id="zip"
+            value="<% if (hasError) { %><%= info.zip %><% } %>">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <style>
+        .error {
+            color: red;
+            padding: 10px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+    </style>
+</body>
+
+</html>

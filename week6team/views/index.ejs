@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Team Activity</title>
+</head>
+
+<body>
+
+    <main>
+        <a class="add" href="/add-info">Add Info</a>
+        <% if (info.length > 0) { %>
+        <div class="grid">
+            <% for (let i of info) { %>
+            <article>
+                <header>
+                    <h2 class="name"><%= i.name %></h2>
+                </header>
+                <div class="details">
+                    <p><%= i.email %></p>
+                    <p><%= i.zip %></p>
+                </div>
+            </article>
+            <% } %>
+        </div>
+        <% } else { %>
+        <h1>No Info Found!</h1>
+        <% } %>
+    </main>
+
+    <style>
+        .add {
+            font-size: 2rem;
+        }
+        .name {
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        .details p {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+
+</body>
+
+</html>
