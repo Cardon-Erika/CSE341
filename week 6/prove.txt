@@ -1,0 +1,29 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-cardon.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+Authentication is working.
+Validation is working.
+Error Handling is working.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+None - I believe everything is working.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I'm not sure yet if this is cool or not, but there seems to be a lot of ways to handle errors. I don't know if I like that, or if it is just making me confused...
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+The assignments were okay. Our group was off to a slow start on the group assignment, and I finished it on my own. There was so much to remember from the videos, some that we still used, other things that we didn't use anymore (as he changes how some things are set up as he goes along) that it was hard to remember how to get everything "talking" to each other at first.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements - CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I've coded along with the videos, but there hasn't really been much to expand on yet.
