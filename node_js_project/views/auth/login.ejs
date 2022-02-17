@@ -18,7 +18,7 @@
                     type="email" 
                     name="email" 
                     id="email" 
-                    value="<%=  oldInput.email %>">
+                    value="<%= oldInput.email %>">
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
@@ -33,7 +33,7 @@
             <button class="btn" type="submit">Login</button>
         </form>
         <div class="centered">
-            <a href="/reset">Reset Password</a>
+            <a class="reset" href="/reset">Reset Password</a>
         </div>
     </main>
     <%- include('../includes/end.ejs') %>

@@ -17,8 +17,8 @@ router.post(
         .isEmail()
         .withMessage('Please enter a valid email address.')
         .normalizeEmail(),
-    body('password', 'Password has to be valid.')
-        .isLength({min: 5})
+    body('password', 'Please enter a valid password.')
+        .isLength({min: 8})
         .isAlphanumeric()
         .trim()
     ],
@@ -37,23 +37,23 @@ router.post(
             // return true;
         return User.findOne({email: value}).then(userDoc => {
             if (userDoc) {
-                return Promise.reject('E-Mail exists already, please pick a different one.');
+                return Promise.reject('This email already exists. Please sign up with a different one, or login.');
             }
         }); 
     })
     .normalizeEmail(),
         body(
             'password', 
-            'Please enter a password with only numbers and text and at least 5 characters.'
+            'Please enter a password with only numbers and text and at least 8 characters.'
         )
-            .isLength({min: 5})
+            .isLength({min: 8})
             .isAlphanumeric()
             .trim(),
         body('confirmPassword')
             .trim()
             .custom((value, {req}) => {
             if (value !== req.body.password) {
-                throw new Error('Passwords have to match!');
+                throw new Error('Passwords must match!');
             }
             return true;
         })
