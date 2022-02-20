@@ -1,0 +1,27 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-cardon.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+All elements are functioning.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+In the feedback for last week's assignment you pointed out that when my 404 page is called it always looked like the user is signed out. I dug around and cannot figure out why this is. My auth controller is looking for isAuthenticated.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I thought this assignment was pretty straightforward and it was fun to tweak the project we had been working on for the past several weeks.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements - CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I think I could have added in more, but I did add in elements that made it differ from the project we coded along with Max.
