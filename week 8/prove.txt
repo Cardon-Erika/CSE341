@@ -5,16 +5,16 @@ https://cse341-cardon.herokuapp.com/
 https://github.com/Cardon-Erika/CSE341
 
 3. Briefly list and describe the elements of the application that are functioning.
-All elements are functioning.
+The entire REST api is functioning.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-In the feedback for last week's assignment you pointed out that when my 404 page is called it always looked like the user is signed out. I dug around and cannot figure out why this is. My auth controller is looking for isAuthenticated.
+The entire assignment is working.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+It was fun to learn about api's and how to communicate information through the different servers via json file.
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
-I thought this assignment was pretty straightforward and it was fun to tweak the project we had been working on for the past several weeks.
+The instructions on the prove assignment were a little vague. I wasn't sure at first if I was just supposed to make up something or use actual information.
 
 7. Please select the category you feel best describes your assignment:
    1 - Some attempt was made
@@ -24,4 +24,4 @@ I thought this assignment was pretty straightforward and it was fun to tweak the
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-I think I could have added in more, but I did add in elements that made it differ from the project we coded along with Max.
+I was going to do the next module in Max's course, but there was some dependency issue with the node modules that I didn't want to dig through and sort out. So, in the end I just did the basic assignment.
