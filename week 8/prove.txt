@@ -1,0 +1,27 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-cardon.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Cardon-Erika/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+The entire REST api is functioning.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+The entire assignment is working.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+It was fun to learn about api's and how to communicate information through the different servers via json file.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+The instructions on the prove assignment were a little vague. I wasn't sure at first if I was just supposed to make up something or use actual information.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements - CHECK
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I was going to do the next module in Max's course, but there was some dependency issue with the node modules that I didn't want to dig through and sort out. So, in the end I just did the basic assignment.
