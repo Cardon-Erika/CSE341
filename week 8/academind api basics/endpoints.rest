@@ -1,3 +1,3 @@
-GET http://localhost:8000/feed/posts
+GET http://localhost:8080/feed/posts
 ###
-POST http://localhost:8000/feed/post
+POST http://localhost:8080/feed/post
